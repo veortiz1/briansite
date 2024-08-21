@@ -1,0 +1,176 @@
+body{
+background-color: black;    background-size: 300% 300%;
+    animation: bg 10s linear infinite;
+    font-family: 'Times New Roman', Times, serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+
+}
+
+@keyframes bg{
+    50%{
+      background-position: 75% 50%;
+    }
+}
+
+
+
+@keyframes glow {
+
+    50%{
+        text-shadow:0 0 1vw rgb(234, 0, 255),0 0 1vw rgb(234, 0, 255);
+       
+
+    }
+}
+
+@keyframes boxglow {
+
+    50%{
+        box-shadow:0 0 2vw rgb(234, 0, 255),0 0 1vw rgb(234, 0, 255);
+
+    }
+}
+
+
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.maintitle{
+    text-align: center;
+    font-size: clamp(3vw,3.1vw,3.2vw);
+    color: white;
+
+    animation: glow 3s linear infinite;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.images img{
+    display: inline-block;
+    width: 50%;
+    aspect-ratio: 1 / 1;    
+    object-fit: cover;   
+   border-radius: 10vw;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.buttons button{
+    background-color: black;
+    color:white;
+    padding: 2vw;
+    border: none;
+    font-size: clamp(3vw,3.25vw,3.5vw);
+    text-shadow:0 0 1vw rgb(234, 0, 255),0 0 1vw rgb(234, 0, 255);
+
+}
+
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+    background-size: 300% 300%;
+
+
+
+    
+}
+@keyframes moving{
+    50%{
+        background-position: 100% 100%;
+    }
+}
+.about p{
+    color: white;
+    font-size: clamp(2.5vw,2.5vw,3vw);
+    height: auto;
+    animation: glow 5s linear infinite;
+
+    
+}
+
+.about img{
+    height: 30vw;
+    width: 30vw;
+    animation: boxglow 5s linear infinite;
+    border-radius: 100px;
+   
+
+}
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule p{
+    color: white;
+    font-size: clamp(3vw,4vw,5vw);
+    text-align: center;
+    animation: glow 5s linear infinite;
+    
+}
+
+.socials{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+
+}
+
+.socials img{
+  height: 5vw;
+  width: 5vw;
+  animation: boxglow 5s linear infinite;
+  padding: 1vw;
+  border-radius: 100px;
+}
+
+.merch{
+    display: flex;
+}
+
+.merch p{
+    color: white;
+    font-size: 50px;
+    animation: glow 1s linear infinite;
+    text-align: center;
+}
+
+
+#schedule{
+    display: none;
+}
+
+#about{
+    display: none;
+}
+#merch{
+    display: none;
+}
+
+#info{
+    display: flex;
+    gap: 1vw;
+}
+
